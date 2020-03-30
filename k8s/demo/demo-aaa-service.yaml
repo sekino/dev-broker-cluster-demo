@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-aaa
+  labels:
+    app: demo-aaa
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+  selector:
+    app: demo-aaa
